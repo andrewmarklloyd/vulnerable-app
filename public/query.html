@@ -1,0 +1,40 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Capstone</title>
+    <link rel="stylesheet" href="/static/bootstrap.css">
+  </head>
+  <body class="bg-dark">
+    <style type="text/css">
+      td { padding:0 25px; }
+    </style>
+    <div class="container">
+      <div class="row mt-1">
+        <div class="col-lg mt-1">
+          <h1 id="title" class="display-3 text-center text-light"><b>Student Records</b></h1>
+          <h4 id="subtitle" class="display-4 text-center text-light"></h4>
+        </div>
+      </div>
+      <div id="app">
+        <div class="row mt-4">
+          <form method="post" id="query-form" enctype="application/x-www-form-urlencoded">
+            <div class="form-group input-group input-group-lg">
+              <label class="text-white" style="font-size: 30px;" for="student_id">Student ID</label>
+              <input id="student_id" type="text" name="student_id" class="form-control input-lg bg-dark text-white" placeholder="" aria-label="" aria-describedby="basic-addon1" value="" style="font-size: 50px;">
+              <button class="btn bg-dark text-light btn-outline-light" type="submit" value="student">
+                <span class="display-4">Submit</span>
+              </button>
+            </div>
+          </form>
+          <button class="btn bg-dark text-light btn-outline-light" id="clear">
+            <span class="display-4">Clear</span>
+          </button>
+        </div>
+        <div id="result" class="text-white" style="font-size: 30px;">
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/app.js"></script>
+  </body>
+</html>

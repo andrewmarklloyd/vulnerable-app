@@ -1,0 +1,5 @@
+FROM mysql:5.5
+
+COPY ./CreateTable.sql/ /docker-entrypoint-initdb.d/
+
+COPY ./InsertData.sql/ /docker-entrypoint-initdb.d/
